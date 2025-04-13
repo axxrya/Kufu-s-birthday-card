@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f0f8ff, #ffe4f8);
+  text-align: center;
+  color: #333;
+  padding: 20px;
+}
+
+h1, h2 {
+  font-size: 2em;
+}
+
+button {
+  padding: 12px 20px;
+  margin: 10px;
+  background: #ffc0cb;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff9eb6;
+}
+
+.hidden {
+  display: none;
+}
+
+.screen {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.folders {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.folder-content img {
+  max-width: 90%;
+  margin: 10px 0;
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: .15em solid pink;
+  animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: pink; }
+}

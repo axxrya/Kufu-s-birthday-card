@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy 18th Birthday!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="welcome-screen" class="screen">
+    <h1 class="typewriter">heppi 18th bdayy🥹💌!!</h1>
+    <p class="message">[i still can't believe you're 18 now. i should start respecting you lol. nah i wont anyways once again congratulations on turning 18. i really am glad you are here with me and i pray that the best things happen because you deserve it. thank you for existing, and thank you for working so hard always. i'm proud times infinity, infinity like the infinity the universe reaches and expands to. i'll be here, you can come anytime. hope you'll like this small gift<3]</p>
+    <button onclick="goToFolders()">Next</button>
+  </div>
+
+  <div id="folders-screen" class="screen hidden">
+    <h2>Here's something for you!!</h2>
+    <div class="folders">
+      <button onclick="openFolder('happy')">Open when you're happy</button>
+      <button onclick="openFolder('sad')">Open when you're sad</button>
+      <button onclick="openFolder('tired')">Open when you're tired</button>
+      <button onclick="openFolder('motivation')">Open when you need motivation</button>
+      <button onclick="openFolder('energy')">Open when you need energy</button>
+      <button onclick="openFolder('missme')">Open when you miss me 🤪</button>
+      <button onclick="openFolder('frustrated')">Open when you're frustrated</button>
+      <button onclick="openFolder('bored')">Open when you're bored</button>
+    </div>
+    <p class="footer">Hope you liked it🥹</p>
+  </div>
+
+  <div id="folder-content" class="screen hidden">
+    <button onclick="backToFolders()">← Back</button>
+    <div id="content-area"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
